@@ -17,8 +17,11 @@ source install/setup.bash
 Publicar robot
 ros2 launch articubot_one rsp.launch.py
 
-Publicar robot conGazebo
+Publicar robot con Gazebo y Lidar
 ros2 launch articubot_one launch_sim.launch.py
+
+Publicar robot en un mapa gazebo
+ros2 launch articubot_one launch_simu.launch.py
 
 Map
 ros2 launch slam_toolbox online_async_launch.py slam_params_file:=./scr/articubot_one/config/mapper_params_online_async.yaml use_sim_time:=true
